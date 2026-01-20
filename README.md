@@ -70,14 +70,22 @@ git clone https://github.com/Alibubere/Aadhar.git
 cd Aadhar
 
 # Install dependencies
-pip install pandas matplotlib seaborn openpyxl scikit-learn numpy
-```
-
-### Using Requirements File
-
-```bash
 pip install -r requirements.txt
 ```
+
+### Dataset Setup
+
+1. **Download Dataset**: Access the complete dataset from Google Drive:
+   ```
+   https://drive.google.com/drive/folders/1WVU5J755hBFV8E9qBX4TcSNPOIhuQnUA
+   ```
+
+2. **Extract Data**: Download and extract the folders to match the project structure:
+   - `biometric_data/` → Place in respective module folders
+   - `demographic_data/` → Place in respective module folders  
+   - `enrolment_data/` → Place in respective module folders
+
+3. **Verify Structure**: Ensure your data folders match the expected structure for each analysis module.
 
 ## Project Structure
 
@@ -185,7 +193,12 @@ spikes = analysis_df[analysis_df['demo_age_17_'] > (analysis_df['avg_updates'] *
 
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+We welcome contributions! Please follow these guidelines:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
 ### Development Setup
 
